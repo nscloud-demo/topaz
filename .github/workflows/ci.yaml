@@ -57,6 +57,7 @@ jobs:
         with:
           version: ${{ env.GO_LANGCI_LINT_VERSION }}
           args: --timeout=30m
+          skip-cache: true
       - name: Test Setup
         uses: autero1/action-gotestsum@v2.0.0
         with:
